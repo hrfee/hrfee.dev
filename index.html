@@ -13,7 +13,6 @@
                     <a href="/" class="heading mb-1">hrfee.dev</a>
                     <a aria-label="github" href="https://github.com/hrfee" class="button ~neutral !normal full-width mt-1">github<i class="ri-github-line"></i></a>
                     <a aria-label="gitea" href="https://git.hrfee.pw/hrfee" class="button ~neutral !normal full-width mt-half">gitea<i class="ri-git-branch-line"></i></a>
-                    <a aria-label="gitea" href="https://ko-fi.com/hrfee" class="button ~neutral !normal full-width mt-half">ko-fi<i class="ri-hand-heart-line"></i></a>
                     <a aria-label="email" href="mailto:hrfee@hrfee.dev" class="button ~neutral !normal full-width mt-half">email<i class="ri-mail-line"></i></a>
                     <a href="https://nextcloud.hrfee.pw" class="button ~neutral !normal full-width mt-half">nextcloud<i class="ri-cloud-line"></i></a>
                     <a href="https://dump.hrfee.pw" class="button ~neutral !normal full-width mt-half">dump<i class="ri-delete-bin-7-line"></i></a>
@@ -55,5 +54,14 @@
                 </div>
             </div>
         </div>
+        <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+        <script>
+            kofiWidgetOverlay.draw('hrfee', {
+                'type': 'floating-chat',
+                'floating-chat.donateButton.text': 'Support me',
+                'floating-chat.donateButton.background-color': '#323842',
+                'floating-chat.donateButton.text-color': '#fff'
+            });
+        </script>
     </body>
 </html>
