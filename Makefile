@@ -13,3 +13,6 @@ debug:
 	cp index.html 404.html favicon.ico out/
 	cp -r node_modules/remixicon/fonts/remixicon.css node_modules/remixicon/fonts/remixicon.woff2 out/
 	npx esbuild --bundle base.css --outfile=out/bundle.css --external:remixicon.css --minify
+
+monitor:
+	nodemon -e html,css -i out --exec "make debug && python -m http.server -d out"

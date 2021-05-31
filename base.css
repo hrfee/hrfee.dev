@@ -6,6 +6,10 @@
     --border-width-2: 3px;
     --border-width-4: 5px;
     --border-width-8: 8px;
+    --c-1: #ffe3ef;
+    --c-2: rgba(173, 201, 233, 0.4);
+    --grad-base: rgb(238,174,202);
+    --grad: linear-gradient(45deg, rgba(238,174,202,0.5) 0%, rgba(148,187,233,0.5) 100%);
 }
 
 .light-theme {
@@ -452,4 +456,43 @@ a:hover, a:active {
 
 .mw-80 {
     min-width: 80%;
+}
+
+.grad {
+    background: var(--grad-base);
+    background: var(--grad);
+}
+
+.c-1 {
+    background: var(--c-1);
+}
+
+.c-2 {
+    background: var(--c-2);
+}
+
+.grad.text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.l-go {
+    background: rgba(0, 173, 216, 0.7);
+    color: rgb(50, 50, 50);
+}
+
+.l-python {
+    background: rgba(53, 114, 165, 0.7);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.l-typescript {
+    background: rgba(43, 116, 137, 0.7);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.l-javascript {
+    background: rgba(241, 224, 90, 0.7);
+    color: rgba(0, 0, 0, 0.7);
 }
