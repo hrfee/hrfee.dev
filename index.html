@@ -6,50 +6,77 @@
         <link rel="stylesheet" href="bundle.css">
         <title>hrfee.dev</title>
     </head>
-    <body>
-        <div class="page-container">
-            <div class="row">
-                <div class="col mr-1">
-                    <a href="/" class="heading mb-1">hrfee.dev</a>
-                    <a aria-label="github" href="https://github.com/hrfee" class="button ~neutral !normal full-width mt-1 c-2" target="_blank">github<i class="ri-github-line"></i></a>
-                    <a aria-label="gitea" href="https://git.hrfee.pw/hrfee" class="button ~neutral !normal full-width mt-half c-2" target="_blank">gitea<i class="ri-git-branch-line"></i></a>
-                    <a aria-label="apt repo" href="https://apt.hrfee.dev" class="button ~neutral !normal full-width mt-half c-2" target="_blank">apt repo<i class="ri-git-repository-line"></i></a>
-                    <a aria-label="email" href="mailto:hrfee@hrfee.dev" class="button ~neutral !normal full-width mt-half c-2" target="_blank">email<i class="ri-mail-line"></i></a>
-                    <a href="https://nextcloud.hrfee.pw" class="button ~neutral !normal full-width mt-half c-2" target="_blank">nextcloud<i class="ri-cloud-line"></i></a>
-                    <a href="https://dump.hrfee.pw" class="button ~neutral !normal full-width mt-half c-2" target="_blank">dump<i class="ri-delete-bin-7-line"></i></a>
-                    <a href="https://hrfee.dev/hrfee.pubkey.gpg" class="button ~neutral !normal full-width mt-half c-2" target="_blank">gpg key<i class="ri-key-line"></i></a>
+    <body class="bg-rose-100">
+        <div class="page-container m-4 lg:my-20 lg:mx-52 flex flex-col gap-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="flex flex-col gap-2">
+                    <div class="flex flex-row md:flex-col gap-2 items-baseline justify-between">
+                        <a href="/" class="heading">hrfee.dev</a>
+                        <div class="subheading text-center">Harvey Tindall</div>
+                    </div>
+                    <a aria-label="github" href="https://github.com/hrfee" class="button ~violet @low w-full flex flex-row gap-4 justify-between" target="_blank">github<i class="ri-github-line"></i></a>
+                    <a aria-label="gitea" href="https://git.hrfee.pw/hrfee" class="button ~violet @low w-full flex flex-row gap-4 justify-between" target="_blank">gitea<i class="ri-git-branch-line"></i></a>
+                    <a aria-label="apt repo" href="https://apt.hrfee.dev" class="button ~violet @low w-full flex flex-row gap-4 justify-between" target="_blank">apt repo<i class="ri-git-repository-line"></i></a>
+                    <a aria-label="email" href="mailto:hrfee@hrfee.dev" class="button ~violet @low w-full flex flex-row gap-4 justify-between" target="_blank">email<i class="ri-mail-line"></i></a>
+                    <a href="https://nextcloud.hrfee.pw" class="button ~violet @low w-full flex flex-row gap-4 justify-between" target="_blank">nextcloud<i class="ri-cloud-line"></i></a>
+                    <a href="https://hrfee.dev/hrfee.pubkey.gpg" class="button ~violet @low w-full flex flex-row gap-4 justify-between" target="_blank">gpg key<i class="ri-key-line"></i></a>
                 </div>
-                <div class="col mw-80">
-                    <div class="card sectioned ~neutral !low">
-                        <section class="section ~neutral">
-                            <span class="heading">Hi!</span>
-                            <p>A computer science student in the UK. I mainly use Go and JS/TS, but know a good amount of C++/C and Python. Below are some of my past/current projects:
-                            <div>
-                                <p class="content"><a href="https://jfa-go.com" class="subheading">jfa-go</a></p>
-                                <div><span class="chip ~info l-go">Go</span> <span class="chip ~info l-typescript">TypeScript</span></div>
-                                <p class="content"> A self-hosted account management service for the <a href="https://jellyfin.org/">Jellyfin</a> media server. Provides invite links to onboard users, allows self-service account modification, and integrates with other services (Jellyseer/Ombi) and contact methods (Discord/Telegram/Matrix). Written to learn the Go language, and as a rewrite of <a href="https://github.com/hrfee/jellyfin-accounts">jellyfin-accounts</a>, which itself was a lockdown project.</p>
-                            </div>
-                            <div>
-                                <p class="content"><a href="https://github.com/hrfee/filaments" class="subheading">"filaments"</a></p>
-                                <div><span class="chip ~info l-go">Go</span> <span class="chip ~info l-typescript">TypeScript</span></div>
-                                <p class="content">A re-implementation of the New York Times <a href="https://www.nytimes.com/games/strands">Strands</a> game, with the ability to load )game board files directly, browse and download from the archive of the original game, and the ability to create and play in multiplayer rooms. Wrote this to make playing with someone over a video call more fun.</p>
-                            </div>
-                            <div>
-                                <p class="content subheading">"rt"</p>
-                                <div><span class="chip ~info l-cpp">C++</span></div>
-                                <p class="content">A CPU-based whitted-style ray tracer, written as a third-year university project looking at available acceleration methods. Supports primitive planes, triangles, axis-aligned boxes, spheres and constructive solid geometry (CSG). Bounding volume hierarchies and voxel-based acceleration structures can be generated and used for a subset of available primitives. Parameter and scene modification provided through an <a href="https://github.com/ocornut/imgui">ImGui</a> interface. Code is not available as permission has not been attained.</p>
-                            </div>
-                            <div>
-                                <p class="content"><a href="https://github.com/hrfee/buildrone" class="subheading">buildrone</a></p>
-                                <div><span class="chip ~info l-go">Go</span> <span class="chip ~info l-typescript">TypeScript</span></div>
-                                
-                                <p class="content">An app for hosting automated software builds done in <a href="https://drone.io">Drone CI</a>. Once connected and enabled for a repo, a key is generated which the Drone pipeline can use along with a script to publish the build files for the specific commit. Currently in use for <a href="https://builds.hrfee.pw/view/hrfee/jfa-go">jfa-go</a>, <a href="https://builds2.hrfee.pw/view/hrfee/waybar-mpris">waybar-mpris</a>, and <a href="https://builds.hrfee.pw/view/hrfee/buildrone">itself</a>. Also includes some extra stuff to allow client apps to be notified of a new release of any type.</p>
-                            </div>
-                            <div>
-                                <p class="content"><a href="https://github.com/hrfee/schoolasm" class="subheading">schoolasm</a></p>
-                                <div><span class="chip ~info l-go">Go</span></div>
-                                
-                                <p class="content">A compiler (or assembler, not sure) and bytecode interpreter for a mock assembly language based on what was used for questions in my A levels. Also includes a very simple black & white canvas that reads color values from memory and supports arrow key input, and a couple extra instructions to make things easier.</p>
+                <div class="flex flex-col grow">
+                    <div class="card sectioned ~neutral">
+                        <section class="section bg-white">
+                            <div class="flex flex-col gap-2">
+                                <div>
+                                    <span class="heading">Hi!</span>
+                                    <p>A computer science student in the UK. I mainly use Go and JS/TS, but know a good amount of C++/C and Python. Below are some of my past/current projects:</p>
+                                </div>
+                                <div>
+                                    <div class="flex flex-row gap-4 my-2">
+                                        <p class="content"><a href="https://jfa-go.com" class="subheading">jfa-go</a></p>
+                                        <div class="flex flex-row gap-2">
+                                            <span class="chip ~info l-go">Go</span>
+                                            <span class="chip ~info l-typescript">TypeScript</span>
+                                        </div>
+                                    </div>
+                                    <p class="content"> A self-hosted account management service for the <a href="https://jellyfin.org/">Jellyfin</a> media server. Provides invite links to onboard users, allows self-service account modification, and integrates with other services (Jellyseer/Ombi) and contact methods (Discord/Telegram/Matrix). Written to learn the Go language, and as a rewrite of <a href="https://github.com/hrfee/jellyfin-accounts">jellyfin-accounts</a>, which itself was a lockdown project.</p>
+                                </div>
+                                <div>
+                                    <div class="flex flex-row gap-4 my-2">
+                                        <p class="content subheading">"rt"</p>
+                                        <div class="flex flex-row gap-2">
+                                            <span class="chip ~info l-cpp">C++</span>
+                                        </div>
+                                    </div>
+                                    <p class="content">A CPU-based whitted-style ray tracer, written as a third-year university project looking at available acceleration methods. Supports planes, triangles, axis-aligned boxes, spheres and constructive solid geometry (CSG). Bounding volume hierarchies and voxel-based acceleration structures can be generated and used for a subset of available primitives. Parameter and scene modification provided through an <a href="https://github.com/ocornut/imgui">ImGui</a> interface. Code is not available as permission has not been attained for its release.</p>
+                                </div>
+                                <div>
+                                    <div class="flex flex-row gap-4 my-2">
+                                        <p class="content"><a href="https://github.com/hrfee/filaments" class="subheading">"filaments"</a></p>
+                                        <div class="flex flex-row gap-2">
+                                            <span class="chip ~info l-go">Go</span>
+                                            <span class="chip ~info l-typescript">TypeScript</span>
+                                        </div>
+                                    </div>
+                                    <p class="content">A re-implementation of the New York Times <a href="https://www.nytimes.com/games/strands">Strands</a> game, with the ability to load game board files directly, browse and download from the archive of the original game, and the ability to create and play in multiplayer rooms. Wrote this to make playing with someone over a video call more fun.</p>
+                                </div>
+                                <div>
+                                    <div class="flex flex-row gap-4 my-2">
+                                        <p class="content"><a href="https://github.com/hrfee/buildrone" class="subheading">buildrone</a></p>
+                                        <div class="flex flex-row gap-2">
+                                            <span class="chip ~info l-go">Go</span>
+                                            <span class="chip ~info l-typescript">TypeScript</span>
+                                        </div>
+                                    </div>
+                                    <p class="content">An app for hosting automated software builds done in <a href="https://drone.io">Drone</a> and <a href="https://woodpecker-ci.org/">Woodpecker</a> CIs. Once connected and enabled for a repo, a key is generated which a CI pipeline can use along with a script to publish the build files for the specific commit. Currently in use for <a href="https://ci.hrfee.dev/repos/3">jfa-go</a> and <a href="https://ci.hrfee.dev/repos/4">itself</a>. Also provides a "tag" system for letting users know when updates are available..</p>
+                                </div>
+                                <div>
+                                    <div class="flex flex-row gap-4 my-2">
+                                        <p class="content"><a href="https://github.com/hrfee/schoolasm" class="subheading">schoolasm</a></p>
+                                        <div class="flex flex-row gap-2">
+                                            <span class="chip ~info l-go">Go</span>
+                                        </div>
+                                    </div>
+                                    <p class="content">A compiler (or assembler, not sure) and bytecode interpreter for a mock assembly language based on what was used for questions in my A levels. Also includes a very simple black & white canvas that reads color values from memory and supports arrow key input, and a couple extra instructions to make things easier.</p>
+                                </div>
                             </div>
                         </section>
                         <section class="section ~urge">
@@ -61,9 +88,6 @@
                                 <li class="content"><a href="https://github.com/hrfee/mpris2client">mpris2client</a>: The MPRIS client library used in the above two.</li>
                                 <li class="content"><a href="https://github.com/hrfee/mediabrowser">mediabrowser</a>: A limited, account management focused Jellyfin/Emby API client.</li>
                                 <li class="content"><a href="https://github.com/hrfee/ch8-emu">ch8-emu</a>: Somewhat functional CHIP-8 emulator. Works with most programs but doesn't support sound.</a></li>
-                                <li class="content"><a href="https://github.com/hrfee/docker-update">docker-update</a>: A personal utility I run on my servers to create and update permanently deployed docker containers.</li>
-                                <li class="content"><a href="https://git.hrfee.pw/hrfee/speedrun">speedrun</a>: A terrible little flask web app that plots speedrun times since a game's release.</li>
-                                <li class="content"><a href="https://git.hrfee.pw/hrfee/classtime-calendar">classtime-calendar</a>: Another personal one I wrote to move my college timetable from the ClassTime app onto Google Calendar.</li>
                             </ul>
                         </section>
                     </div>
