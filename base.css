@@ -496,3 +496,8 @@ a:hover, a:active {
     background: rgba(241, 224, 90, 0.7);
     color: rgba(0, 0, 0, 0.7);
 }
+
+.l-cpp {
+    background: #6B9DD5;
+    color: #ffffff;
+}
